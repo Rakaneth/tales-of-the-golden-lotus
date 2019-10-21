@@ -15,7 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
+    <None Update="Data\placeholder.yml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
