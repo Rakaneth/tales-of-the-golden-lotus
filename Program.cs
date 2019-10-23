@@ -23,7 +23,5 @@ namespace GoldenLotus
             ScreenManager.Instance.Register(new TitleScreen());
             ScreenManager.Instance.SetScreen("title");
         }
-            
-        
     }
 }
