@@ -25,7 +25,7 @@ namespace GoldenLotus
             {
                 lock (padlock)
                 {
-                    if (instance == null) instance = new GameManager();
+                    if (instance == null) instance = new GameManager(0xDEADBEEF);
                     return instance;
                 }
             }
@@ -36,7 +36,7 @@ namespace GoldenLotus
             RNG = new XorShift128Generator();
         }
 
-        private GameManager(int seed)
+        private GameManager(uint seed)
         {
             RNG = new XorShift128Generator(seed);
         }
